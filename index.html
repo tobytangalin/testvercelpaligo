@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="utf-8"></meta><meta http-equiv="X-UA-Compatible" content="IE=edge"></meta><meta name="viewport" content="width=device-width, initial-scale=1"></meta><title></title><link href="css/font-awesome.css" rel="stylesheet"></link><link href="css/roboto.font.css" rel="stylesheet"></link><link href="css/sm-core-css.css" rel="stylesheet" type="text/css"></link><link href="css/sm-simple.css" rel="stylesheet" type="text/css"></link><link href="css/theme1.css" rel="stylesheet"></link><link href="css/theme1-colors.css" rel="stylesheet"></link><link href="css/content-theme2.css" rel="stylesheet"></link><link href="css/62ea68e1188c6.css" rel="stylesheet"></link><style></style><link rel="icon" href="/favicon.ico" type="image/x-icon"></link><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/googlecode.min.css"></link><script src="js/jquery-3/jquery-3.4.1.min.js"></script><script src="js/jquery-migrate-3.0.1.min.js"></script><script src="js/materialize.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/jquery.smartmenus.js" type="text/javascript"></script><script src="js/html5-2-mp-common.js"></script><script src="js/html5-2.js"></script><script type="text/javascript" class="before-bundle">
+            //TODO: Used to modify path for portal search. Change to get dynamically
+            var portalLanguage = 'en';
+            var languageTitleMap = {"en":""};
+            var categoriesShown = 4;
+            var shown = 4;
+            
+            var versionsfile = '';
+
+            var indexDict = new Array();
+            var store = {
+            };
+            var enterKey = 'select';
+						var fuse_threshold = 0.3;
+					var instantsearch_minlength = 1;
+						</script><script src="js/fuse.min.js" type="text/javascript"></script><script src="js/html5.fuse.search.js" type="text/javascript"></script><script class="search-script" src="en/js/fuzzydata.js" type="text/javascript"></script><script src="js/html5-2-portal.js"></script><script src="js/jquery.mark.min.js" type="text/javascript"></script><script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script><script type="text/javascript">
+			$(document).ready(function() {
+
+				$('pre:not(.embedcode)').each(function() {
+					/**
+					 * @type {string}
+					 */
+					var language = $(this).data('language');
+
+					if (language === 'plaintext' || language === 'text') {
+						$(this).addClass(language).addClass('hljs');
+						return true;
+					}
+					else {
+						var clone = this.cloneNode(true);
+						hljs.highlightBlock(clone);
+						$(this).empty().append($(clone).contents());
+						$(this).attr("class", $(clone).attr("class"));
+					}
+				});
+			});
+			</script><script type="text/javascript" src="js/cookie-consent.js"></script><script src="js/layout-custom-script.js" type="text/javascript"></script></head><body><style type="text/css">
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+          </style><div class="skipnav"><a href="#content-wrapper">Skip to main content</a></div><div class="portal-content theme1" dir="ltr"><header class="portal-header" data-portal-language="en"><div class="inner"><a class="logo-link"><img class="logo" src="css/image/portal-logo.svg" alt="Logo"></img></a><h1>How can we help you today?</h1><form class="portal-search form-inline" autocomplete="off"><input id="portal-search-field" type="search" class="form-control search-field" placeholder="Search"></input><button type="submit" class="btn"><i class="fa fa-search"></i></button></form></div></header><div class="portal-body" id="content-wrapper" data-portal-language="en"><div class="portal-body-container"><div class="portal-body-row"><div class="portal-publications"><div class="inner"><div class="inner-row"></div></div></div><h5 class="featured-content-label">Featured content</h5><div class="portal-contents featured-content"><div class="inner"></div></div></div><div id="content-wrapper" class="portal-search-result"><div class="search-container"><h2>Search results</h2><ul class="searchresults"></ul><p class="noresults">No results found</p></div></div></div></div><footer class="portal-footer" data-portal-language="en"><div class="inner row"><div class="copyright col-md-3"> © 2023  </div><div class="dropup languages pull-right col-md-2"><button data-toggle="dropdown" class="dropdown-toggle btn btn-default">English <b class="caret"></b></button><ul class="dropdown-menu"><li><a class="language-item dropdown-item active" lang="en">English</a></li></ul></div></div></footer></div></body></html>
