@@ -24,7 +24,7 @@ $(document).ready(function () {
 
         topsection = $('.article, .section').first().attr('id');
 
-        if (! $("#aa-search-input").is(":focus")) {
+        if (! $("#aa-search-input, .aa-search-input").is(":focus")) {
             $('section[id], .accordion').each(function () {
 
                 if ($(this).hasClass('accordion') && $(this).find('.active').length == 0) {

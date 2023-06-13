@@ -51,7 +51,7 @@ function mobileAjaxToc() {
     //ASN: Hide mobile TOC and show contents, for ajax version
     if (true === $(".mobile-nav-toggle").is(":visible")) {
         $("#toc-wrapper").hide();
-        $("#content-wrapper").show();
+        $("#content-wrapper, content-wrapper").show();
     }
 }
 
@@ -83,9 +83,9 @@ function scrollToElement(ele) {
     $(window).scrollTop(ele.offset().top).scrollLeft(ele.offset().left);
 }
 
-
+/* PAL2-7900 check this */
 function loadContent(href, hash) {
-    $("#content-wrapper").load(href + ' #content-wrapper>*', function () {
+    $("#content-wrapper, .content-wrapper").load(href + ' #content-wrapper>*', function () {
         $(this).unbind('load');
 
         //ASN: Problem: makes the page reload for some reason on some clicks

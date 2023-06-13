@@ -85,7 +85,7 @@ function addSearch() {
     //For legacy, where the search container is not already there
     if ($('.search-container').length == 0) {
         $resultcontainer = $('<div id="search-container"><h2>Search results</h2><ul class="searchresults"></ul></div>');
-        $resultcontainer.appendTo($('#content-wrapper'));
+        $resultcontainer.appendTo($('#content-wrapper, .content-wrapper'));
     } else {
         if ($("*[data-portal-language]").length) {
             $resultcontainer = $("*[data-portal-language='" + portalLanguage + "'] .portal-search-result");

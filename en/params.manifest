@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <params>
   <param name="html5.theme" select="1"/>
-  <param name="html5.content.theme" select="2"/>
+  <param name="html5.content.theme" select="1"/>
   <param name="jquery.version" select="3.4.1"/>
   <param name="use.algolia.search" select="0"/>
   <param name="use.algolia.free.docsearch" select="0"/>
@@ -9,24 +9,24 @@
   <param name="algolia.custom.index.name" select=""/>
   <param name="use.fuse.search" select="1"/>
   <param name="use.multilingual.default.search" select="0"/>
-  <param name="custom.css.source" select="/var/www/ccms/usr/sitecore/xsl/custom/assets/layout-838679/62ea68e1188c6.css"/>
+  <param name="custom.css.source" select="/var/www/ccms/usr/sitecore/xsl/custom/assets/layout-769278/5ea6f7ae0a6ce.css"/>
   <param name="portal.logo.filename" select="css/image/corporate-logo-white.svg"/>
   <param name="portal.background.filename" select=""/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/sitecore/production-6407430820fe75.22074300/1060129-Managing_XM_Cloud_client_credentials-html5/out/css/image/portal-bg.jpg"/>
-  <param name="company.name" select=""/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/sitecore/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/portal-bg.jpg"/>
+  <param name="company.name" select="Sitecore"/>
   <param name="copyright.year" select=""/>
-  <param name="copyright"> © 2023  </param>
+  <param name="copyright"> © 2023 Sitecore </param>
   <param name="sticky.header" select="0"/>
-  <param name="full.width.header" select="0"/>
-  <param name="cookie.consent" select="0"/>
-  <param name="privacypolicy" select="/privacy"/>
-  <param name="privacypolicy" select="/privacy"/>
-  <param name="google.analytics" select=""/>
+  <param name="full.width.header" select="1"/>
+  <param name="cookie.consent" select="opt-out"/>
+  <param name="privacypolicy" select="https://www.sitecore.com/trust/privacy-policy"/>
+  <param name="privacypolicy" select="https://www.sitecore.com/trust/privacy-policy"/>
+  <param name="google.analytics" select="UA-72664331-1"/>
   <param name="google.analytics.type" select="gtag"/>
   <param name="user.custom.script" select="0"/>
-  <param name="layout.custom.script" select="/var/www/ccms/usr/sitecore/xsl/custom/assets/layout-838679/62ea68f6d5743.js"/>
-  <param name="create.sitemap" select="0"/>
-  <param name="destination.domain" select=""/>
+  <param name="layout.custom.script" select="/var/www/ccms/usr/sitecore/xsl/custom/assets/layout-769278/5ea6f83db4837.js"/>
+  <param name="create.sitemap" select="1"/>
+  <param name="destination.domain" select="https://doc.sitecore.com/"/>
   <param name="submit.feedback" select="0"/>
   <param name="voting.panel" select="0"/>
   <param name="feedback.email" select=""/>
@@ -40,20 +40,20 @@
   <param name="last.modified.text" select="Last modified: "/>
   <param name="categories.shown" select="4"/>
   <param name="single.topic.permalink" select=""/>
-  <param name="logo.link" select=""/>
+  <param name="logo.link" select="https://doc.sitecore.com/xmc/"/>
   <param name="feedback.toggle" select="no-button"/>
   <param name="bootstrap.version" select="340"/>
-  <param name="layout.custom.style.persistent.name" select="0"/>
+  <param name="layout.custom.style.persistent.name" select="1"/>
   <param name="open.category.first.topic" select="0"/>
   <param name="elastic.site.search" select=""/>
   <param name="elastic.site.search.only.index.main.content" select="0"/>
-  <param name="other.custom.search" select="0"/>
-  <param name="use.page.toc" select="0"/>
+  <param name="other.custom.search" select="1"/>
+  <param name="use.page.toc" select="1"/>
   <param name="swagger.embed" select="0"/>
   <param name="use.separate.relationship.toc" select="1"/>
   <param name="in.this.section.string" select="In this section"/>
   <param name="seealso.string" select="See also"/>
-  <param name="use.section.toc" select="after"/>
+  <param name="use.section.toc" select="none"/>
   <param name="taxonomies.relationship" select=""/>
   <param name="use.top.nav" select="0"/>
   <param name="external.top.nav.links" select=""/>
@@ -68,11 +68,11 @@
   <param name="portal.publication.title" select=""/>
   <param name="collapsible.toc" select="0"/>
   <param name="focus.on.current.toc.section" select="1"/>
-  <param name="use.resource.version.suffix" select="0"/>
+  <param name="use.resource.version.suffix" select="1"/>
   <param name="create.search.page.for.algolia" select="0"/>
   <param name="add.canonical.url" select="0"/>
   <param name="custom.favicon.path" select=""/>
-  <param name="initial.heading.level" select="default"/>
+  <param name="initial.heading.level" select="chunk"/>
   <param name="add.rel.noopener" select="1"/>
   <param name="scripts.in.body" select="0"/>
   <param name="external.logo.link.in.same.tab" select="0"/>
@@ -85,6 +85,7 @@
   <param name="universalaccess.skipnav.css.inline" select="1"/>
   <param name="universalaccess.skipnav.linktext" select="Skip to main content"/>
   <param name="universalaccess.skipnav.css.inline" select="1"/>
+  <param name="universalaccess.markup.incompatible" select="0"/>
   <param name="slides.revealjs.animate.listitems" select="1"/>
   <param name="slides.revealjs.transition" select="slide"/>
   <param name="slides.revealjs.show.progress" select="1"/>
@@ -99,11 +100,11 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/sitecore/production-6407430820fe75.22074300/1060129-Managing_XM_Cloud_client_credentials-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/sitecore/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/sitecore/production-6407430820fe75.22074300/1060129-Managing_XM_Cloud_client_credentials-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/sitecore/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/sitecore/production-6407430820fe75.22074300/1060129-Managing_XM_Cloud_client_credentials-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/sitecore/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/logo-dark.png"/>
   <param name="delayed.algolia.search" select="0"/>
   <param name="choose.startpage.by.role" select="0"/>
 </params>

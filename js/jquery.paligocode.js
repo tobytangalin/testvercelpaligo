@@ -70,8 +70,7 @@
 
 }(jQuery));
 
-$(document)
-  .ready(function () {
-    $('.programlisting')
-      .paligocode();
-  });
+$(document).on("ready ajaxComplete", function () {
+  $('.programlisting')
+    .paligocode();
+});

@@ -377,9 +377,9 @@ function chunkedPrevNext(){
         return this.href.match(/.*\.html?$/);
     });
 
-
-    var nextlink = $('#header-navigation-next');
-    var prevlink = $('#header-navigation-prev');
+  /*  PAL2-7900  there can be more than one prev/next link on a page, and they can be marked with either id or class */
+    var nextlink = $('.header-navigation-next,#header-navigation-next');
+    var prevlink = $('.header-navigation-prev,#header-navigation-prev');
 
     var next = '';
     var prev = '';

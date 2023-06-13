@@ -141,10 +141,10 @@ ul.toc li.active ul {
 .bs-docs-nav .navbar-toggle .icon-bar {
     background-color: rgb(89, 13, 58);
 }
-#content-wrapper img {
+#content-wrapper img, .content-wrapper img {
 	max-width: 100%;
 }
-#content-wrapper section {
+#content-wrapper section, .content-wrapper section {
 	padding-top: 40px;
 }
 .warning, .note, .important, .caution, .tip {
@@ -200,7 +200,7 @@ ul.toc li.active ul {
 }
 
 /* Aligning first title with TOC */
-#content-wrapper .article, #content-wrapper .article > .section:first-child, #content-wrapper .article > .section:first-child > .titlepage .title {
+#content-wrapper .article, #content-wrapper .article > .section:first-child, #content-wrapper .article > .section:first-child > .titlepage .title, .content-wrapper .article, .content-wrapper .article > .section:first-child, .content-wrapper .article > .section:first-child > .titlepage .title {
     margin-top: 0px;
     padding-top: 0px;
 }

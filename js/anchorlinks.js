@@ -85,7 +85,7 @@ function setAnchors () {
             parent = trigger.closest('section, .example, .procedure, .figure, .table, .bridgehead, .note, .caution, .warning, .important, .tip').parentNode;
             id = parent.id;
             //Check for 'Preloaded' variant first, in which case we always want the hash:
-            contentwrapper = $(trigger.closest('.content-wrapper'));
+            contentwrapper = $(trigger.closest('.content-wrapper, #content-wrapper'));
             if (id === 'topic-content' && contentwrapper.length) {
                 return location.href.replace(location.hash, "") + trigger.getAttribute('data-anchorid');
             } else if (id === 'topic-content') {

@@ -39,10 +39,10 @@
 	.entry-text {
 		padding-bottom: 30px;
 	}
-	#content-wrapper {
+	#content-wrapper, .content-wrapper {
 		padding-bottom: 40px;
 	}
-	#content-wrapper section {
+	#content-wrapper section, .content-wrapper section {
 		padding-top: 20px;
 	}
 	#toc-container .affix {

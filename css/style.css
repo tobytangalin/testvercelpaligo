@@ -135,7 +135,7 @@ a:link, a:visited {
 	padding-left: 25px;
 	padding-right: 25px;
 }
-#logotype-pageheader {
+#logotype-pageheader, .logotype-pageheader {
 	margin: 15px 0;
 	max-width: 150px;
 	max-height:60px;

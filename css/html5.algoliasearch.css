@@ -258,7 +258,7 @@ a:hover .hit-body {
   max-height: 85vh;
   overflow-y: auto;
 }
-.theme2 .toolbar #aa-search-input {
+.theme2 .toolbar #aa-search-input, .theme2 .toolbar .aa-search-input {
   position: absolute !important;
 }
 

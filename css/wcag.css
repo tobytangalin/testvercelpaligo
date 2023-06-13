@@ -35,12 +35,12 @@ html body {
     background-color: white;
 }
 
-.nav-site-sidebar li a {
+.nav-site-sidebar li a, .nav-site-sidebar .active > a, .toc li a {
 	color: #000;
 	background-color: white;
 }
 
-.nav-site-sidebar ul a {
+.nav-site-sidebar ul a, .toc ul a {
 	color: #000;
 	background-color: white;
 	font-size: 0.93em
