@@ -1,20 +1,20 @@
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] ############################################################
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] # Output Factory initiated (html5)
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] # Building output for: Manage connections for source control and hosting providers
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] # URL /document/edit/1135229
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] # User: Toby Tangalin
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] # Time: Tue, 13 Jun 2023 08:25:39 +0100
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] # Server: cottbus
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] ############################################################
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Group: custom
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Type: html5
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Transformation: $user_dir/xsl/custom/layout-769278.xsl
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] File found: $user_dir/xsl/custom/layout-769278.xsl
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] ############################################################
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Building output for: html5
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Using stylesheet: $user_dir/xsl/custom/layout-769278.xsl
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Parameters for this build: []
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Environment variables for this build: Array
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] ############################################################
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] # Output Factory initiated (html5)
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] # Building output for: Manage connections for source control and hosting providers
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] # URL /document/edit/1135229
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] # User: Toby Tangalin
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] # Time: Tue, 13 Jun 2023 08:38:27 +0100
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] # Server: aachen
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] ############################################################
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] Group: custom
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] Type: html5
+[13/Jun/2023 08:38:27 Europe/Dublin] [Info] Transformation: $user_dir/xsl/custom/layout-769278.xsl
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] File found: $user_dir/xsl/custom/layout-769278.xsl
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] ############################################################
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] Building output for: html5
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] Using stylesheet: $user_dir/xsl/custom/layout-769278.xsl
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] Parameters for this build: []
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] Environment variables for this build: Array
 (
     [taxonomy.filter.strategy] => self
     [taxonomies.propagate] => 1
@@ -23,54 +23,54 @@
     [taxonomy.class.name.strategy] => self
 )
 
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Building output for languages: Array
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] Building output for languages: Array
 (
     [0] => en
 )
 
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Building multilang: no
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] Building preview: no
-[13/Jun/2023 08:25:39 Europe/Dublin] [Info] ############################################################
-[13/Jun/2023 08:25:40 Europe/Dublin] [Info] Using build directory: $local_tmp/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5
-[13/Jun/2023 08:25:40 Europe/Dublin] [Info] -- Generating source files
-[13/Jun/2023 08:25:40 Europe/Dublin] [Info] -- Propagating taxonomies: true
-[13/Jun/2023 08:25:43 Europe/Dublin] [Info] -- Source files have been generated
-[13/Jun/2023 08:25:43 Europe/Dublin] [Info] -- Publication has no unresolved dependencies.
-[13/Jun/2023 08:25:43 Europe/Dublin] [Info] -- Generating source files complete.
-[13/Jun/2023 08:25:44 Europe/Dublin] [Info] Localizing: component-1135229.xml
-[13/Jun/2023 08:25:44 Europe/Dublin] [Info] Language: en
-[13/Jun/2023 08:25:44 Europe/Dublin] [Warning] Resolving some links failed
-[13/Jun/2023 08:25:44 Europe/Dublin] [Info] [/*/*[6]/*[2]/*/*] An outgoing link in <a href="/document/edit/1135229">Manage connections for source control and hosting providers</a> could not be resolved. The link points to <a href="/document/edit/1063940">Create an XM Cloud project from a starter template in the XM Cloud Deploy app</a> which is not part of this publication.
-[13/Jun/2023 08:25:44 Europe/Dublin] [Info] Variable sets found: 0
-[13/Jun/2023 08:25:45 Europe/Dublin] [Info] Inserting image links.
-[13/Jun/2023 08:25:45 Europe/Dublin] [Info] Found 2 image(s).
-[13/Jun/2023 08:25:45 Europe/Dublin] [Info] Found image 'connections-page-xm-cloud-deploy.PNG'
-[13/Jun/2023 08:25:45 Europe/Dublin] [Info] Found image 'actions-menu-horizontal-icon.png'
-[13/Jun/2023 08:25:46 Europe/Dublin] [Info] Profiling parameters: []
-[13/Jun/2023 08:25:46 Europe/Dublin] [Info] Profiling customisation: $user_dir/xsl/profile.xsl (not found)
-[13/Jun/2023 08:25:46 Europe/Dublin] [Info] Transformation: component-1135229--en.org.xml -> component-1135229--en.xml [profile.xsl]
-[13/Jun/2023 08:25:46 Europe/Dublin] [Info] Transformation: component-1135229--en.xml -> component-1135229--en.xml [internal-xref.xsl]
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Transformation: A-filelist.xml -> B-sorted.xml [IO.document.sortlang.xsl]
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Transformation: B-sorted.xml -> C-concatenated.xml [IO.document.concat.xsl]
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Transformation: B-sorted.xml -> index-en.xml [IO.document.head.xsl]
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Created copy: $user_dir/xsl/custom/layout-769278.xsl -> $user_dir/xsl/custom/648819fb6a1d9.xsl
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/html5/xmc_html5-2.page.xsl -> $user_dir/xsl/custom/648819fb6a1d9.page.xsl
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/html5/xmc_html5-2.index.xsl -> $user_dir/xsl/custom/648819fb6a1d9.index.xsl
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5-2.page.xsl -> $user_dir/xsl/custom/648819fb6a1d9.page.xsl
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5-2.index.xsl -> $user_dir/xsl/custom/648819fb6a1d9.index.xsl
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5.toc.xsl -> $user_dir/xsl/custom/648819fb6a1d9.toc.xsl
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5.page.xsl -> $user_dir/xsl/custom/648819fb6a1d9.page.xsl
-[13/Jun/2023 08:25:47 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5.index.xsl -> $user_dir/xsl/custom/648819fb6a1d9.index.xsl
-[13/Jun/2023 08:25:48 Europe/Dublin] [Info] Image copied: en/image/uuid-d637a414-a774-668c-cb21-a678c1e86b91.PNG
-[13/Jun/2023 08:25:48 Europe/Dublin] [Info] Image copied: en/image/uuid-19b5257d-2fb7-59f5-30ec-feab9a68ca43.png
-[13-Jun-2023 08:25:51 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, js/jquery-3/*, fonts/*
-[13-Jun-2023 08:25:51 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, fonts/*
-[13-Jun-2023 08:25:51 Europe/Dublin] Copy file '$user_dir/xsl/custom/assets/layout-769278/5c98d7ebe55fd.png' to '$local_tmp/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/corporate-logo.png'
-[13-Jun-2023 08:25:51 Europe/Dublin] Copy file '$apppath/lib/docbook/xsl/html5/css/image/corporate-logo-white.svg' to '$local_tmp/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/portal-logo.svg'
-[13-Jun-2023 08:25:51 Europe/Dublin] Copy file '$user_dir/xsl/custom/assets/layout-769278/5ea6f83db4837.js' to '$local_tmp/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/js/layout-custom-script.js'
-[13-Jun-2023 08:25:51 Europe/Dublin] Post build HTML5
-[13/Jun/2023 08:25:52 Europe/Dublin] [Info] Transformation: index-en.html -> toc-en.html [648819fb6a1d9.toc.xsl]
-[13/Jun/2023 08:25:52 Europe/Dublin] [Info] Transformation: index-en.html -> index-en.html [648819fb6a1d9.page.xsl]
-[13/Jun/2023 08:25:52 Europe/Dublin] [Info] Generating index page.
-[13/Jun/2023 08:25:52 Europe/Dublin] [Info] Transformation: index.manifest -> index.html [648819fb6a1d9.index.xsl]
-[13/Jun/2023 08:25:53 Europe/Dublin] [Info] # Took 14.059090 seconds to render.
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] Building multilang: no
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] Building preview: no
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] ############################################################
+[13/Jun/2023 08:38:28 Europe/Dublin] [Info] Using build directory: $local_tmp/production-64881cf29fa666.50483171/1135229-Manage_connections_for_source_control_and_hosting_providers-html5
+[13/Jun/2023 08:38:29 Europe/Dublin] [Info] -- Generating source files
+[13/Jun/2023 08:38:29 Europe/Dublin] [Info] -- Propagating taxonomies: true
+[13/Jun/2023 08:38:30 Europe/Dublin] [Info] -- Source files have been generated
+[13/Jun/2023 08:38:30 Europe/Dublin] [Info] -- Publication has no unresolved dependencies.
+[13/Jun/2023 08:38:30 Europe/Dublin] [Info] -- Generating source files complete.
+[13/Jun/2023 08:38:31 Europe/Dublin] [Info] Localizing: component-1135229.xml
+[13/Jun/2023 08:38:31 Europe/Dublin] [Info] Language: en
+[13/Jun/2023 08:38:31 Europe/Dublin] [Warning] Resolving some links failed
+[13/Jun/2023 08:38:31 Europe/Dublin] [Info] [/*/*[6]/*[2]/*/*] An outgoing link in <a href="/document/edit/1135229">Manage connections for source control and hosting providers</a> could not be resolved. The link points to <a href="/document/edit/1063940">Create an XM Cloud project from a starter template in the XM Cloud Deploy app</a> which is not part of this publication.
+[13/Jun/2023 08:38:31 Europe/Dublin] [Info] Variable sets found: 0
+[13/Jun/2023 08:38:33 Europe/Dublin] [Info] Inserting image links.
+[13/Jun/2023 08:38:33 Europe/Dublin] [Info] Found 2 image(s).
+[13/Jun/2023 08:38:33 Europe/Dublin] [Info] Found image 'connections-page-xm-cloud-deploy.PNG'
+[13/Jun/2023 08:38:33 Europe/Dublin] [Info] Found image 'actions-menu-horizontal-icon.png'
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Profiling parameters: []
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Profiling customisation: $user_dir/xsl/profile.xsl (not found)
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Transformation: component-1135229--en.org.xml -> component-1135229--en.xml [profile.xsl]
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Transformation: component-1135229--en.xml -> component-1135229--en.xml [internal-xref.xsl]
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Transformation: A-filelist.xml -> B-sorted.xml [IO.document.sortlang.xsl]
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Transformation: B-sorted.xml -> C-concatenated.xml [IO.document.concat.xsl]
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Transformation: B-sorted.xml -> index-en.xml [IO.document.head.xsl]
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Created copy: $user_dir/xsl/custom/layout-769278.xsl -> $user_dir/xsl/custom/64881cfa94906.xsl
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/html5/xmc_html5-2.page.xsl -> $user_dir/xsl/custom/64881cfa94906.page.xsl
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/html5/xmc_html5-2.index.xsl -> $user_dir/xsl/custom/64881cfa94906.index.xsl
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5-2.page.xsl -> $user_dir/xsl/custom/64881cfa94906.page.xsl
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5-2.index.xsl -> $user_dir/xsl/custom/64881cfa94906.index.xsl
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5.toc.xsl -> $user_dir/xsl/custom/64881cfa94906.toc.xsl
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5.page.xsl -> $user_dir/xsl/custom/64881cfa94906.page.xsl
+[13/Jun/2023 08:38:34 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5.index.xsl -> $user_dir/xsl/custom/64881cfa94906.index.xsl
+[13/Jun/2023 08:38:35 Europe/Dublin] [Info] Image copied: en/image/uuid-d637a414-a774-668c-cb21-a678c1e86b91.PNG
+[13/Jun/2023 08:38:35 Europe/Dublin] [Info] Image copied: en/image/uuid-19b5257d-2fb7-59f5-30ec-feab9a68ca43.png
+[13-Jun-2023 08:38:39 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, js/jquery-3/*, fonts/*
+[13-Jun-2023 08:38:39 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, fonts/*
+[13-Jun-2023 08:38:39 Europe/Dublin] Copy file '$user_dir/xsl/custom/assets/layout-769278/5c98d7ebe55fd.png' to '$local_tmp/production-64881cf29fa666.50483171/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/corporate-logo.png'
+[13-Jun-2023 08:38:39 Europe/Dublin] Copy file '$apppath/lib/docbook/xsl/html5/css/image/corporate-logo-white.svg' to '$local_tmp/production-64881cf29fa666.50483171/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/portal-logo.svg'
+[13-Jun-2023 08:38:39 Europe/Dublin] Copy file '$user_dir/xsl/custom/assets/layout-769278/5ea6f83db4837.js' to '$local_tmp/production-64881cf29fa666.50483171/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/js/layout-custom-script.js'
+[13-Jun-2023 08:38:40 Europe/Dublin] Post build HTML5
+[13/Jun/2023 08:38:40 Europe/Dublin] [Info] Transformation: index-en.html -> toc-en.html [64881cfa94906.toc.xsl]
+[13/Jun/2023 08:38:41 Europe/Dublin] [Info] Transformation: index-en.html -> index-en.html [64881cfa94906.page.xsl]
+[13/Jun/2023 08:38:41 Europe/Dublin] [Info] Generating index page.
+[13/Jun/2023 08:38:41 Europe/Dublin] [Info] Transformation: index.manifest -> index.html [64881cfa94906.index.xsl]
+[13/Jun/2023 08:38:42 Europe/Dublin] [Info] # Took 14.201644 seconds to render.

@@ -12,7 +12,7 @@
   <param name="custom.css.source" select="/var/www/ccms/usr/sitecore/xsl/custom/assets/layout-769278/5ea6f7ae0a6ce.css"/>
   <param name="portal.logo.filename" select="css/image/corporate-logo-white.svg"/>
   <param name="portal.background.filename" select=""/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/sitecore/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/portal-bg.jpg"/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/sitecore/production-64881cf29fa666.50483171/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/portal-bg.jpg"/>
   <param name="company.name" select="Sitecore"/>
   <param name="copyright.year" select=""/>
   <param name="copyright"> © 2023 Sitecore </param>
@@ -100,11 +100,11 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/sitecore/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/sitecore/production-64881cf29fa666.50483171/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/sitecore/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/sitecore/production-64881cf29fa666.50483171/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/sitecore/production-648819f24f3af6.53852793/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/sitecore/production-64881cf29fa666.50483171/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/logo-dark.png"/>
   <param name="delayed.algolia.search" select="0"/>
   <param name="choose.startpage.by.role" select="0"/>
 </params>
