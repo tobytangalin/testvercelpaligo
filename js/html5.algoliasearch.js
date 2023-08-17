@@ -62,6 +62,11 @@ function addSearch() {
                 var html = '<a href="' + up + suggestion.url + '"><div class="aa-search-title">' +
                 suggestion._highlightResult.title.value + '</div><div class="aa-search-body">' +
                 body + '</div></a>';
+                if (use_breadcrumbs_for_algolia_searchresults === '1') {
+                    html = '<a href="' + up + suggestion.url + '"><div class="aa-search-title" data-toggle="tooltip" title="' + suggestion.breadcrumbs + '">' +
+                    suggestion._highlightResult.title.value + '</div><div class="aa-search-body">' +
+                    body + '</div></a>';
+                }
 
                 return html;
             }

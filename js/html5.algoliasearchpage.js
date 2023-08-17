@@ -36,6 +36,7 @@ instantsearch.widgets.hits({
         '<h3 class="hit-title">{{ title }}</h3>' +
         '<p class="hit-body">{{{_highlightResult.body.value}}}</p>' +
         '</a>' +
+		((use_breadcrumbs_for_algolia_searchresults === '1')? '<p class="search-result-breadcrumbs hit-breadcrumbs">{{ breadcrumbs }}</p>' : '') +
         '</div>',
         empty: "We didn't find any results for the search <em>\"{{query}}\"</em>"
     }

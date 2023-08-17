@@ -906,3 +906,7 @@ div.feedback-panel .btn {
     position: absolute;
     right: 10px;
 }
+
+.info-elements {
+    display: none;
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <params>
   <param name="html5.theme" select="1"/>
-  <param name="html5.content.theme" select="1"/>
+  <param name="html5.content.theme" select="2"/>
   <param name="jquery.version" select="3.4.1"/>
   <param name="use.algolia.search" select="0"/>
   <param name="use.algolia.free.docsearch" select="0"/>
@@ -9,24 +9,24 @@
   <param name="algolia.custom.index.name" select=""/>
   <param name="use.fuse.search" select="1"/>
   <param name="use.multilingual.default.search" select="0"/>
-  <param name="custom.css.source" select="/var/www/ccms/usr/sitecore/xsl/custom/assets/layout-769278/5ea6f7ae0a6ce.css"/>
+  <param name="custom.css.source" select="/var/www/ccms/usr/sitecore/xsl/custom/assets/layout-838679/62ea68e1188c6.css"/>
   <param name="portal.logo.filename" select="css/image/corporate-logo-white.svg"/>
   <param name="portal.background.filename" select=""/>
-  <param name="portal.background.filename.out" select="/paligo/tmp/sitecore/production-648873dda7bf31.77654411/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/portal-bg.jpg"/>
-  <param name="company.name" select="Sitecore"/>
+  <param name="portal.background.filename.out" select="/paligo/tmp/sitecore/production-64de0dd73ac066.71469081/1176495-The_XM_Cloud_build_configuration-html5/out/css/image/portal-bg.jpg"/>
+  <param name="company.name" select=""/>
   <param name="copyright.year" select=""/>
-  <param name="copyright"> © 2023 Sitecore </param>
+  <param name="copyright"> © 2023  </param>
   <param name="sticky.header" select="0"/>
-  <param name="full.width.header" select="1"/>
-  <param name="cookie.consent" select="opt-out"/>
-  <param name="privacypolicy" select="https://www.sitecore.com/trust/privacy-policy"/>
-  <param name="privacypolicy" select="https://www.sitecore.com/trust/privacy-policy"/>
-  <param name="google.analytics" select="UA-72664331-1"/>
+  <param name="full.width.header" select="0"/>
+  <param name="cookie.consent" select="0"/>
+  <param name="privacypolicy" select="/privacy"/>
+  <param name="privacypolicy" select="/privacy"/>
+  <param name="google.analytics" select=""/>
   <param name="google.analytics.type" select="gtag"/>
   <param name="user.custom.script" select="0"/>
-  <param name="layout.custom.script" select="/var/www/ccms/usr/sitecore/xsl/custom/assets/layout-769278/5ea6f83db4837.js"/>
-  <param name="create.sitemap" select="1"/>
-  <param name="destination.domain" select="https://doc.sitecore.com/"/>
+  <param name="layout.custom.script" select="/var/www/ccms/usr/sitecore/xsl/custom/assets/layout-838679/62ea68f6d5743.js"/>
+  <param name="create.sitemap" select="0"/>
+  <param name="destination.domain" select=""/>
   <param name="submit.feedback" select="0"/>
   <param name="voting.panel" select="0"/>
   <param name="feedback.email" select=""/>
@@ -40,14 +40,14 @@
   <param name="last.modified.text" select="Last modified: "/>
   <param name="categories.shown" select="4"/>
   <param name="single.topic.permalink" select=""/>
-  <param name="logo.link" select="https://doc.sitecore.com/xmc/"/>
+  <param name="logo.link" select=""/>
   <param name="feedback.toggle" select="no-button"/>
   <param name="bootstrap.version" select="340"/>
-  <param name="layout.custom.style.persistent.name" select="1"/>
+  <param name="layout.custom.style.persistent.name" select="0"/>
   <param name="open.category.first.topic" select="0"/>
   <param name="elastic.site.search" select=""/>
   <param name="elastic.site.search.only.index.main.content" select="0"/>
-  <param name="other.custom.search" select="1"/>
+  <param name="other.custom.search" select="0"/>
   <param name="use.page.toc" select="1"/>
   <param name="swagger.embed" select="0"/>
   <param name="use.separate.relationship.toc" select="1"/>
@@ -68,7 +68,7 @@
   <param name="portal.publication.title" select=""/>
   <param name="collapsible.toc" select="0"/>
   <param name="focus.on.current.toc.section" select="1"/>
-  <param name="use.resource.version.suffix" select="1"/>
+  <param name="use.resource.version.suffix" select="0"/>
   <param name="create.search.page.for.algolia" select="0"/>
   <param name="add.canonical.url" select="0"/>
   <param name="custom.favicon.path" select=""/>
@@ -100,11 +100,17 @@
   <param name="slides.revealjs.theme.custom" select=""/>
   <param name="slides.revealjs.background.image.opacity" select="1"/>
   <param name="slides.revealjs.default.background.image" select=""/>
-  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/sitecore/production-648873dda7bf31.77654411/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/default_slide_background.png"/>
+  <param name="slides.revealjs.default.background.image.out" select="/paligo/tmp/sitecore/production-64de0dd73ac066.71469081/1176495-The_XM_Cloud_build_configuration-html5/out/css/image/default_slide_background.png"/>
   <param name="slides.revealjs.logo" select=""/>
-  <param name="slides.revealjs.logo.out" select="/paligo/tmp/sitecore/production-648873dda7bf31.77654411/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/logo-light.png"/>
+  <param name="slides.revealjs.logo.out" select="/paligo/tmp/sitecore/production-64de0dd73ac066.71469081/1176495-The_XM_Cloud_build_configuration-html5/out/css/image/logo-light.png"/>
   <param name="slides.revealjs.logo.alt" select=""/>
-  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/sitecore/production-648873dda7bf31.77654411/1135229-Manage_connections_for_source_control_and_hosting_providers-html5/out/css/image/logo-dark.png"/>
+  <param name="slides.revealjs.logo.alt.out" select="/paligo/tmp/sitecore/production-64de0dd73ac066.71469081/1176495-The_XM_Cloud_build_configuration-html5/out/css/image/logo-dark.png"/>
   <param name="delayed.algolia.search" select="0"/>
+  <param name="use.breadcrumbs.for.algolia.searchresults" select="0"/>
   <param name="choose.startpage.by.role" select="0"/>
+  <param name="use.coveo.search" select="0"/>
+  <param name="coveo.accesstoken" select=""/>
+  <param name="coveo.organizationid" select=""/>
+  <param name="coveo.facets" select="language|Language"/>
+  <param name="create.search.page.for.coveo" select="0"/>
 </params>
