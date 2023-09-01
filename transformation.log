@@ -1,68 +1,88 @@
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] ############################################################
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] # Output Factory initiated (html5)
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] # Building output for: The XM Cloud build configuration
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] # URL /document/edit/1176495
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] # User: Toby Tangalin
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] # Time: Thu, 17 Aug 2023 13:08:56 +0100
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] # Server: bordeaux
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] ############################################################
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Group: custom
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Type: html5
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Transformation: $user_dir/xsl/custom/layout-838679.xsl
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] File found: $user_dir/xsl/custom/layout-838679.xsl
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] ############################################################
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Building output for: html5
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Using stylesheet: $user_dir/xsl/custom/layout-838679.xsl
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Parameters for this build: []
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Environment variables for this build: Array
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] ############################################################
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] # Output Factory initiated (html5)
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] # Building output for: Toby feedback for Send roles of Louise
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] # URL /document/edit/1181974
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] # User: Toby Tangalin
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] # Time: Fri, 01 Sep 2023 10:41:55 +0100
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] # Server: bordeaux
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] ############################################################
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Group: custom
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Type: html5
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Transformation: $user_dir/xsl/custom/layout-697309.xsl
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] File found: $user_dir/xsl/custom/layout-697309.xsl
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] ############################################################
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Building output for: html5
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Using stylesheet: $user_dir/xsl/custom/layout-697309.xsl
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Parameters for this build: Array
 (
-    [reused.publication.as.topic] => 0
+    [profile.xinfo.product] => Sitecore Send
+)
+
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Environment variables for this build: Array
+(
+    [taxonomy.filter.strategy] => self
+    [taxonomies.propagate] => 1
+    [scope.profiling.used] => 1
+    [generate.preview.links] => 0
+    [taxonomy.class.name.strategy] => self
     [auto.image.size.attributes] => 1
 )
 
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Building output for languages: Array
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Building output for languages: Array
 (
     [0] => en
 )
 
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Building multilang: no
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] Building preview: no
-[17/Aug/2023 13:08:56 Europe/Dublin] [Info] ############################################################
-[17/Aug/2023 13:08:57 Europe/Dublin] [Info] Using build directory: $local_tmp/production-64de0dd73ac066.71469081/1176495-The_XM_Cloud_build_configuration-html5
-[17/Aug/2023 13:08:57 Europe/Dublin] [Info] -- Generating source files
-[17/Aug/2023 13:08:57 Europe/Dublin] [Info] -- Propagating taxonomies: false
-[17/Aug/2023 13:08:57 Europe/Dublin] [Info] -- Source files have been generated
-[17/Aug/2023 13:08:57 Europe/Dublin] [Info] -- Publication has no unresolved dependencies.
-[17/Aug/2023 13:08:57 Europe/Dublin] [Info] -- Generating source files complete.
-[17/Aug/2023 13:08:58 Europe/Dublin] [Info] Localizing: component-1176495.xml
-[17/Aug/2023 13:08:58 Europe/Dublin] [Info] Language: en
-[17/Aug/2023 13:08:59 Europe/Dublin] [Warning] Resolving some links failed
-[17/Aug/2023 13:08:59 Europe/Dublin] [Info] [/*/*[15]/*[26]/*[1]] An outgoing link in <a href="/document/edit/1176495">The XM Cloud build configuration</a> could not be resolved. The link points to <a href="/document/edit/798785">Sitecore Content Serialization</a> which is not part of this publication.
-[17/Aug/2023 13:08:59 Europe/Dublin] [Info] Variable sets found: 0
-[17/Aug/2023 13:08:59 Europe/Dublin] [Info] Images found: 0
-[17/Aug/2023 13:09:00 Europe/Dublin] [Info] Inserting image links.
-[17/Aug/2023 13:09:00 Europe/Dublin] [Info] Found 0 image(s).
-[17/Aug/2023 13:09:01 Europe/Dublin] [Info] Profiling parameters: []
-[17/Aug/2023 13:09:01 Europe/Dublin] [Info] Profiling customisation: $user_dir/xsl/profile.xsl (not found)
-[17/Aug/2023 13:09:01 Europe/Dublin] [Info] Transformation: component-1176495--en.org.xml -> component-1176495--en.xml [profile.xsl]
-[17/Aug/2023 13:09:01 Europe/Dublin] [Info] Transformation: component-1176495--en.xml -> component-1176495--en.xml [internal-xref.xsl]
-[17/Aug/2023 13:09:01 Europe/Dublin] [Info] Transformation: A-filelist.xml -> B-sorted.xml [IO.document.sortlang.xsl]
-[17/Aug/2023 13:09:01 Europe/Dublin] [Info] Transformation: B-sorted.xml -> C-concatenated.xml [IO.document.concat.xsl]
-[17/Aug/2023 13:09:01 Europe/Dublin] [Info] Transformation: B-sorted.xml -> index-en.xml [IO.document.head.xsl]
-[17/Aug/2023 13:09:02 Europe/Dublin] [Info] Created copy: $user_dir/xsl/custom/layout-838679.xsl -> $user_dir/xsl/custom/64de0dde2e98a.xsl
-[17/Aug/2023 13:09:02 Europe/Dublin] [Info] Created symlink: $apppath/lib/docbook/xsl/html5/html5-2.page.xsl -> $user_dir/xsl/custom/64de0dde2e98a.page.xsl
-[17/Aug/2023 13:09:02 Europe/Dublin] [Info] Created symlink: $apppath/lib/docbook/xsl/html5/html5-2.index.xsl -> $user_dir/xsl/custom/64de0dde2e98a.index.xsl
-[17/Aug/2023 13:09:02 Europe/Dublin] [Info] Created symlink: $apppath/lib/docbook/xsl/html5/html5.toc.xsl -> $user_dir/xsl/custom/64de0dde2e98a.toc.xsl
-[17/Aug/2023 13:09:02 Europe/Dublin] [Info] Created symlink: $apppath/lib/docbook/xsl/html5/html5.page.xsl -> $user_dir/xsl/custom/64de0dde2e98a.page.xsl
-[17/Aug/2023 13:09:02 Europe/Dublin] [Info] Created symlink: $apppath/lib/docbook/xsl/html5/html5.index.xsl -> $user_dir/xsl/custom/64de0dde2e98a.index.xsl
-[17-Aug-2023 13:09:03 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, js/jquery-3/*, fonts/*
-[17-Aug-2023 13:09:03 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, fonts/*
-[17-Aug-2023 13:09:03 Europe/Dublin] Copy file '$apppath/lib/docbook/xsl/html5/css/image/corporate-logo-white.svg' to '$local_tmp/production-64de0dd73ac066.71469081/1176495-The_XM_Cloud_build_configuration-html5/out/css/image/corporate-logo.svg'
-[17-Aug-2023 13:09:03 Europe/Dublin] Copy file '$apppath/lib/docbook/xsl/html5/css/image/corporate-logo-white.svg' to '$local_tmp/production-64de0dd73ac066.71469081/1176495-The_XM_Cloud_build_configuration-html5/out/css/image/portal-logo.svg'
-[17-Aug-2023 13:09:03 Europe/Dublin] Copy file '$user_dir/xsl/custom/assets/layout-838679/62ea68f6d5743.js' to '$local_tmp/production-64de0dd73ac066.71469081/1176495-The_XM_Cloud_build_configuration-html5/out/js/layout-custom-script.js'
-[17-Aug-2023 13:09:03 Europe/Dublin] Post build HTML5
-[17/Aug/2023 13:09:04 Europe/Dublin] [Info] Transformation: index-en.html -> toc-en.html [64de0dde2e98a.toc.xsl]
-[17/Aug/2023 13:09:04 Europe/Dublin] [Info] Transformation: index-en.html -> index-en.html [64de0dde2e98a.page.xsl]
-[17/Aug/2023 13:09:04 Europe/Dublin] [Info] Generating index page.
-[17/Aug/2023 13:09:04 Europe/Dublin] [Info] Transformation: index.manifest -> index.html [64de0dde2e98a.index.xsl]
-[17/Aug/2023 13:09:05 Europe/Dublin] [Info] # Took 8.982991 seconds to render.
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Building multilang: no
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] Building preview: no
+[01/Sep/2023 10:41:55 Europe/Dublin] [Info] ############################################################
+[01/Sep/2023 10:41:56 Europe/Dublin] [Info] Using build directory: $local_tmp/production-64f1b1e24ea089.59171295/1181974-Toby_feedback_for_Send_roles_of_Louise-html5
+[01/Sep/2023 10:41:56 Europe/Dublin] [Info] -- Generating source files
+[01/Sep/2023 10:41:56 Europe/Dublin] [Info] -- Propagating taxonomies: true
+[01/Sep/2023 10:41:58 Europe/Dublin] [Info] -- Source files have been generated
+[01/Sep/2023 10:41:58 Europe/Dublin] [Info] -- Publication has no unresolved dependencies.
+[01/Sep/2023 10:41:58 Europe/Dublin] [Info] -- Generating source files complete.
+[01/Sep/2023 10:41:59 Europe/Dublin] [Info] Localizing: publication-1181974.xml
+[01/Sep/2023 10:41:59 Europe/Dublin] [Info] Language: en
+[01/Sep/2023 10:41:59 Europe/Dublin] [Warning] Resolving some links failed
+[01/Sep/2023 10:41:59 Europe/Dublin] [Info] [/*/*[2]/*[14]/*[5]/*/*[2]/*] An outgoing link in <a href="/document/edit/689919">Add team members and manage security roles</a> could not be resolved. The link points to <a href="/document/edit/891433">Manage the access of a team member</a> which is not part of this publication.
+[01/Sep/2023 10:42:00 Europe/Dublin] [Info] Variable sets found: 1
+[01/Sep/2023 10:42:00 Europe/Dublin] [Info] Images found: 3
+[01/Sep/2023 10:42:01 Europe/Dublin] [Info] Inserting image links.
+[01/Sep/2023 10:42:01 Europe/Dublin] [Info] Found 3 image(s).
+[01/Sep/2023 10:42:01 Europe/Dublin] [Info] Found image 'Edit_campaign_icon.png'
+[01/Sep/2023 10:42:01 Europe/Dublin] [Info] Found image 'trash icon'
+[01/Sep/2023 10:42:01 Europe/Dublin] [Info] Found image 'Icon_ProfileAvatar.jpg'
+[01/Sep/2023 10:42:02 Europe/Dublin] [Info] Profiling parameters: Array
+(
+    [profile.xinfo.product] => Sitecore Send
+)
+
+[01/Sep/2023 10:42:02 Europe/Dublin] [Info] Profiling customisation: $user_dir/xsl/profile.xsl (not found)
+[01/Sep/2023 10:42:02 Europe/Dublin] [Info] Transformation: publication-1181974--en.org.xml -> publication-1181974--en.xml [profile.xsl]
+[01/Sep/2023 10:42:02 Europe/Dublin] [Info] Transformation: publication-1181974--en.xml -> publication-1181974--en.xml [internal-xref.xsl]
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Transformation: A-filelist.xml -> B-sorted.xml [IO.document.sortlang.xsl]
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Transformation: B-sorted.xml -> C-concatenated.xml [IO.document.concat.xsl]
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Transformation: B-sorted.xml -> index-en.xml [IO.document.head.xsl]
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Created copy: $user_dir/xsl/custom/layout-697309.xsl -> $user_dir/xsl/custom/64f1b1eb449f8.xsl
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/html5/send_html5-2.page.xsl -> $user_dir/xsl/custom/64f1b1eb449f8.page.xsl
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/html5/send_html5-2.index.xsl -> $user_dir/xsl/custom/64f1b1eb449f8.index.xsl
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5-2.page.xsl -> $user_dir/xsl/custom/64f1b1eb449f8.page.xsl
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5-2.index.xsl -> $user_dir/xsl/custom/64f1b1eb449f8.index.xsl
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5.toc.xsl -> $user_dir/xsl/custom/64f1b1eb449f8.toc.xsl
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5.page.xsl -> $user_dir/xsl/custom/64f1b1eb449f8.page.xsl
+[01/Sep/2023 10:42:03 Europe/Dublin] [Info] Created symlink: $user_dir/xsl/default/html5/html5.index.xsl -> $user_dir/xsl/custom/64f1b1eb449f8.index.xsl
+[01/Sep/2023 10:42:04 Europe/Dublin] [Info] Image copied: en/image/uuid-c6047a8b-e413-8996-9e6c-2d01ae49b395.jpg
+[01-Sep-2023 10:42:06 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, js/jquery-3/*, fonts/*
+[01-Sep-2023 10:42:06 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, fonts/*
+[01-Sep-2023 10:42:06 Europe/Dublin] Copy file '$user_dir/xsl/custom/assets/layout-697309/5c98d7ebe55fd.png' to '$local_tmp/production-64f1b1e24ea089.59171295/1181974-Toby_feedback_for_Send_roles_of_Louise-html5/out/css/image/corporate-logo.png'
+[01-Sep-2023 10:42:06 Europe/Dublin] Copy file '$apppath/lib/docbook/xsl/html5/css/image/corporate-logo-white.svg' to '$local_tmp/production-64f1b1e24ea089.59171295/1181974-Toby_feedback_for_Send_roles_of_Louise-html5/out/css/image/portal-logo.svg'
+[01-Sep-2023 10:42:06 Europe/Dublin] Copy file '$user_dir/xsl/custom/assets/layout-697309/5ea6f83db4837.js' to '$local_tmp/production-64f1b1e24ea089.59171295/1181974-Toby_feedback_for_Send_roles_of_Louise-html5/out/js/layout-custom-script.js'
+[01-Sep-2023 10:42:07 Europe/Dublin] Post build HTML5
+[01/Sep/2023 10:42:08 Europe/Dublin] [Info] Transformation: index-en.html -> toc-en.html [64f1b1eb449f8.toc.xsl]
+[01/Sep/2023 10:42:08 Europe/Dublin] [Info] Transformation: roles-and-permissions-in-sitecore-send.html -> roles-and-permissions-in-sitecore-send.html [64f1b1eb449f8.page.xsl]
+[01/Sep/2023 10:42:08 Europe/Dublin] [Info] Transformation: add-team-members-and-manage-security-roles.html -> add-team-members-and-manage-security-roles.html [64f1b1eb449f8.page.xsl]
+[01/Sep/2023 10:42:08 Europe/Dublin] [Info] Transformation: index-en.html -> index-en.html [64f1b1eb449f8.page.xsl]
+[01/Sep/2023 10:42:08 Europe/Dublin] [Info] Generating index page.
+[01/Sep/2023 10:42:08 Europe/Dublin] [Info] Transformation: index.manifest -> index.html [64f1b1eb449f8.index.xsl]
+[01/Sep/2023 10:42:09 Europe/Dublin] [Info] # Took 13.939281 seconds to render.
