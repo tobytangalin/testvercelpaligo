@@ -152,8 +152,8 @@ $(document).on('toc.ready', function () {
     var glyphicon = "<span class='glyphicon'></span>";
     $('ul.nav-site-sidebar .swagger-topic').append(glyphicon);
 
-    /*Collapse sections:*/
-    $(".nav-site-sidebar a .glyphicon").click(function (e) {
+    /*Collapse sections (and make non-clickable topic headings act in the same way as glyphicons):*/
+    $(".nav-site-sidebar a:not(.topichead) .glyphicon, .nav-site-sidebar a.topichead").click(function (e) {
         e.preventDefault();
         $(this).closest("li").toggleClass("opened");
     });

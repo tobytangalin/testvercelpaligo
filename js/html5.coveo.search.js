@@ -1,5 +1,8 @@
 $(document).on('ready', function () {
     init();
+    if (window.location.hash) {
+        showSearch($resultcontainer);
+    }
 });
 
 $(document).ajaxComplete(function() {

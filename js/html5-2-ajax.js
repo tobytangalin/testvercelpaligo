@@ -19,7 +19,7 @@ $(document).on('toc.ready', function () {
     var glyphicon = "<span class='glyphicon'></span>";
     $('ul.nav-site-sidebar .swagger-topic').append(glyphicon);
 
-    $(".nav-site-sidebar a .glyphicon").click(function (e) {
+    $(".nav-site-sidebar a:not(.topichead) .glyphicon, .nav-site-sidebar a.topichead").click(function (e) {
         e.preventDefault();
         $(this).closest("li").toggleClass("opened");
     });
@@ -230,6 +230,7 @@ function loadContent(href, hash) {
                 return false;
             }
         });
+        chunkedPrevNext();
         addSearch();
         addPopover();
         initChecklist();

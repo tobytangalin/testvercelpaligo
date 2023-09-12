@@ -16,7 +16,10 @@ $(document).ready(function () {
         li.appendChild(a);
         a.innerHTML = node.text;
         a.className = node.class;
-        a.href = node.url;
+        if (node.url != '') {
+            a.href = node.url;
+        }
+        
         if (node.children) {
             var span = document.createElement("span");
             //Only for legacy, new hc output has .site-body
@@ -46,8 +49,8 @@ $(document).ready(function () {
 
     //Select the toc by class instead of id, to use for all styles
     $("ul.toc li a, ul.section-toc li a").each(function (e) {
-        var thislink = $(this).attr("href")
-        $(this).attr("href", prefix + decodeURI(thislink));
+        var thislink = typeof $(this).attr("href") !== "undefined" ? $(this).attr("href") : '';
+        thislink !== '' ? $(this).attr("href", prefix + decodeURI(thislink)) :'';
     });
 
     $(document).trigger('toc.ready');

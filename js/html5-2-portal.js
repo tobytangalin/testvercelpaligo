@@ -66,6 +66,8 @@ function showCurrentLanguage(portalLanguage) {
         pageUrl = pageUrl + "&" + queryParamsString;
     }
 
+    pageUrl += window.location.hash;
+
     var pageTitle = languageTitleMap[portalLanguage];
     if (pageTitle) {$("html head title").text(pageTitle);}
     window.history.replaceState('', '', pageUrl);

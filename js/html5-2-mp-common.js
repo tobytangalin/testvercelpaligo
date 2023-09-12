@@ -189,44 +189,67 @@ function buildSectionToc() {
 }
 
 function chunkedPrevNext() {
-    var toc = $('aside ul.toc');
-    var links = toc.find('a').filter(function () {
-        return this.href.match(/.*\.html?$/);
-    });
-
-    var nextlink = $('.pager .next a');
-    var prevlink = $('.pager .previous a');
+    var links = getTocLinks();
+    var navigation = getPageNavigation();
 
     var next = '';
     var prev = '';
 
-    /*Looping the toc to create correct prev/next navigation corresponding to toc options.*/
-    for (var index = 0; index < links.length; index++) {
-        var minusone = links[index - 1];
-        var plusone = links[index + 1];
-        if (typeof minusone !== "undefined") {
-            if (minusone.parentElement.classList.contains('active')) {
-                var jqueryObj = $(links[index]);
-                next = jqueryObj.attr('href');
-                nextlink.attr('href', next);
-            }
+    //If no topic is active in the ToC, the index-[lang].html is active. Then point the next link to the first valid topic.
+    if (typeof links.activeIndex === "undefined") {
+        if (typeof links[0] !== "undefined") {
+            next = links[0].href;
         }
+        navigation.nextlink.attr('href', next);
+        navigation.prevlink.remove();
+        return false;
+    }
 
-        if (typeof plusone !== "undefined") {
-            if (plusone.parentElement.classList.contains('active')) {
-                var jqueryObj = $(links[index]);
-                prev = jqueryObj.attr('href');
-                prevlink.attr('href', prev);
-            }
-        }
-    };
-
+    next = links[links.activeIndex].next;
+    prev = links[links.activeIndex].prev;
+    navigation.nextlink.attr('href', next);
+    navigation.prevlink.attr('href', prev);
 
     if (next == '') {
-        /*If there is no next in the TOC, it means the standard transform has created a next from an internal link, which we don't want.
-        Not needed for prev, because it will always be the index for that situation (first topic). */
-        nextlink.remove();
+        navigation.nextlink.remove();
     }
+
+    if (prev == '') {
+        navigation.prevlink.remove();
+    }
+}
+
+function getTocLinks() {
+    var toc = $('aside ul.toc');
+    var links = toc.find('a').filter(function () {
+        return this.href.match(/.*\.html?$/);
+    });
+    var tocLinks = {};
+    for (var index = 0; index < links.length; index++) {
+        var tocLink = {};
+        tocLink.index = index;
+        tocLink.active = links[index].parentNode.classList.contains('active');
+        tocLink.href = links[index].href;
+        tocLink.next = index === links.length -1 ? "" : links[index + 1].href;
+        var relativePrefix = "";
+        relativePrefix += $('#topic-content section').attr('data-relative-prefix') ? $('#topic-content section').attr('data-relative-prefix') : "";
+        var language = $('html').attr('lang');
+        //Point the first valid topic prev link to index-[lang].html
+        tocLink.prev = index === 0 ? relativePrefix + "index-" + language + ".html" : links[index - 1].href;
+        if (tocLink.active) {
+            tocLinks.activeIndex = index;
+        }
+        tocLinks[index] = tocLink;
+    }
+
+    return tocLinks;
+}
+
+function getPageNavigation() {
+    var navigation = {};
+    navigation.nextlink = $('.pager .next a');
+    navigation.prevlink = $('.pager .previous a');
+    return navigation;
 }
 
 function displayAccordionTarget(id) {
