@@ -129,7 +129,6 @@
                 } else if (status === 'deny') {
                     deleteGACookies();
                     $(document).trigger('cookies.declined');
-                    location.reload();
                 }
                 // 'dismiss' status is only set when the
                 // consenttype === 'info', and if that's
