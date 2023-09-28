@@ -166,8 +166,7 @@ function buildSectionToc() {
         var toc = $('aside ul.toc');
 
         var currentChunkListitem = toc.find('li.opened>a').filter(function () {
-            var hrefdecoded = decodeURI(this.href);
-            return hrefdecoded.match(regex);
+            return matchHrefWithRegex(this.href, regex);
         }).parent();
 
         var links = currentChunkListitem.find(">ul");
@@ -222,7 +221,7 @@ function chunkedPrevNext() {
 function getTocLinks() {
     var toc = $('aside ul.toc');
     var links = toc.find('a').filter(function () {
-        return this.href.match(/.*\.html?$/);
+        return matchHrefWithRegex(this.href, /.*\.html?$/);
     });
     var tocLinks = {};
     for (var index = 0; index < links.length; index++) {
@@ -305,9 +304,33 @@ function getEmbedCode(){
                     } else {
                         code = hljs.highlightAuto(code.value);
                     }
+                } else {
+                    $pre.empty();
                 }
 
                 $pre.append(code.value).addClass(code.language);
             });
     });
+}
+
+/**
+ * Matches a href against a regex
+ * @param {string} href href to match
+ * @param {RegExp} regex The regular expression to match against
+ * @returns {boolean} true or false
+ */
+function matchHrefWithRegex(href, regex) {
+    let hrefdecoded = decodeURI(href);
+    if (! hrefdecoded) {
+        return false;
+    }
+
+    // Certain hosts use "Pretty URLs" which removes the .html extension in the hrefs.
+    // This will add the .html back when looking for a match.
+    const endsWithHTML = hrefdecoded.endsWith('.html');
+    if (!endsWithHTML) {
+        hrefdecoded += '.html';
+    }
+
+    return hrefdecoded.match(regex);
 }
