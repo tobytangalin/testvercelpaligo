@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"></meta><meta name="format-detection" content="telephone=no"></meta><meta name="viewport" content="width=device-width, initial-scale=1"></meta><meta name="search" content="default"></meta><meta name="use.ic" content="no"></meta><meta name="Audience - do not use" content=""></meta><meta name="clubot" content=""></meta><meta name="data model" content=""></meta><meta name="DxP type - Do Not Use" content=""></meta><meta name="media_icon" content=""></meta><meta name="product" content="Sitecore Cloud Portal"></meta><meta name="Publishing target" content="Production"></meta><meta name="Ready for publishing - do not use" content=""></meta><meta name="role" content="developers"></meta><meta name="topic_tripane" content=""></meta><meta name="version" content=""></meta><meta name="tocstandalone" content="yes"></meta><meta name="theme" content="1"></meta><meta name="search.placeholder" content="Search"></meta><meta name="search.results" content="Search results"></meta><meta name="no.search.results" content="No results found"></meta><script type="text/javascript">
+var theme = '1';
+
+			
+			window.versionsfile = '';
+
+
+			window.indexDict = new Array();
+			window.store = {};
+			window.portalLanguage = 'en';
+			window.enterKey = 'select';
+			
+			
+				var fuse_threshold = 0.3;
+			
+					var local_csh = false;
+				
+					var anchoroption = true;
+				var instantsearch_minlength = 1;
+						
+			var useanchorlinks = false;
+			
+					function addSearch(){
+					//not used with custom or elastic search
+					}
+				</script><title>Create a support case</title><link rel="stylesheet" type="text/css" href="../css/docbook.css"></link><link rel="stylesheet" type="text/css" href="../css/font-awesome.css"></link><link rel="stylesheet" type="text/css" href="../css/roboto.font.css"></link><link rel="stylesheet" type="text/css" href="../css/theme1.css?version=20231026"></link><link rel="stylesheet" type="text/css" href="../css/theme1-colors.css?version=20231026"></link><link rel="stylesheet" type="text/css" href="../css/content-theme1.css?version=20231026"></link><link rel="stylesheet" type="text/css" href="../css/sm-core-css.css"></link><link rel="stylesheet" type="text/css" href="../css/sm-simple.css"></link><link rel="stylesheet" type="text/css" href="../css/style-print.css"></link><link rel="stylesheet" type="text/css" href="../css/style-common.css"></link><link rel="stylesheet" type="text/css" href="../css/style-modern-tables.css"></link><link rel="stylesheet" type="text/css" href="../css/graphical-lists.css"></link><link rel="stylesheet" type="text/css" href="/css/sitecore-custom-default-xmc.css?version=20231026"></link><script src="../js/jquery-3/jquery-3.4.1.min.js" type="text/javascript"></script><script src="../js/jquery-migrate-3.0.1.min.js" type="text/javascript"></script><script src="../js/materialize.min.js" type="text/javascript"></script><script src="../js/bootstrap.min.js" type="text/javascript"></script><script src="../js/purl.js" type="text/javascript"></script><script src="../js/jquery.smartmenus.js" type="text/javascript"></script><script src="js/toc.js?version=20231026" type="text/javascript"></script><script src="../js/create-toc.js" type="text/javascript"></script><script src="../js/html5-2-mp-common.js?version=20231026" type="text/javascript"></script><script src="../js/html5-2.js?version=20231026" type="text/javascript"></script><script src="../js/checklist.js" type="text/javascript"></script><script src="../js/clipboard.min.js" type="text/javascript"></script><script src="../js/csh.js" type="text/javascript"></script><script src="/js/layout-custom-script.js" type="text/javascript"></script><meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="generator" content="Paligo"></meta><meta name="description" content="Describes how to create a support case in the Sitecore Cloud Portal."></meta><link rel="prev" href="enabling-and-deleting-sso-connections.html#UUID-2c5b6274-1de8-99ec-26f4-3f54f0b346cc_section-idm1733369876854312" title="Deleting an enabled SSO connection"></link><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" async="async"></script><link rel="icon" href="/favicon.ico" type="image/x-icon"></link><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css"></link><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script><script type="text/javascript">var privacypolicy = 'https://www.sitecore.com/trust/privacy-policy';
+var consenttype = 'opt-out';
+</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-72664331-1"></script><script type="text/javascript">const measurementId = 'UA-72664331-1';
+
+						$(document).on('cookies.consented', () => {
+							window.dataLayer = window.dataLayer || [];
+							function gtag(){dataLayer.push(arguments)};
+
+							gtag('js', new Date());
+							gtag('config', measurementId);
+						});
+					</script><script type="text/javascript" src="../js/cookie-consent.js"></script><script type="text/javascript">
+				$(document).ready(function () {
+				$(".mediaobject img").addClass('materialboxed');
+				//Exclude images with links
+				$(".mediaobject a img").removeClass('materialboxed');
+				if (!document.documentMode) {
+				$('.materialboxed').materialbox();
+				}});
+			</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/googlecode.min.css"></link><script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script><script type="text/javascript">
+			$(document).ready(function() {
+
+				$('pre:not(.embedcode)').each(function() {
+					/**
+					 * @type {string}
+					 */
+					var language = $(this).data('language');
+
+					if (language === 'plaintext' || language === 'text') {
+						$(this).addClass(language).addClass('hljs');
+						return true;
+					}
+					else {
+						var clone = this.cloneNode(true);
+						hljs.highlightBlock(clone);
+						$(this).empty().append($(clone).contents());
+						$(this).attr("class", $(clone).attr("class"));
+					}
+				});
+			});
+			</script></head><body class="theme1 colored-top page-toc current-toc-section-focus" data-spy="scroll" data-target=".section-nav-container" data-offset="100" data-link-prefix=""><style type="text/css">
+            div.skipnav {
+            }
+            div.skipnav a {
+                position: fixed;
+                left: -10000px;
+                top: 1.5em;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            div.skipnav a:focus, div.skipnav a:active, div.skipnav a:hover {
+                background: white;
+                color: black;
+                box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+                position: fixed;
+                left: 2em;
+                top: 1.5em;
+                width: auto;
+                height: auto;
+                overflow: visible;
+                text-decoration: underline;
+                z-index: 99999; /* has to be higher than the side panel */
+    }
+          </style><div class="skipnav"><a href="#content-wrapper">Skip to main content</a></div><header class="site-header"><nav class="site-header-navbar navbar navbar-fixed-top"><div class="navbar-container"><div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div id="logotype-container" class="pull-left"><a class="navbar-brand" href="https://doc.sitecore.com/" target="_blank" rel="noopener"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div></div><div class="navbar-collapse collapse" id="navbar"></div></div></nav></header><div class="site-body"><div class="site-body-container"><div class="site-body-row"><aside xmlns:xinfo="http://ns.expertinfo.se/cms/xmlns/1.0" class="site-sidebar"><div class="site-sidebar-header"><a href="https://doc.sitecore.com/" target="_blank"><img id="logotype-pageheader" src="../css/image/corporate-logo.png" alt="Corporate logotype" data-role="logotype" class="logo"></img></a></div><div id="toc-standalone-placeholder"></div></aside><div class="site-content"><div class="toolbar"><div class="toolbar-tools"><div id="navbar" class="navbar-collapse collapse"></div><div class="tool-print"><i class="fa fa-print" aria-hidden="true">print</i></div><div class="tool-search"><i class="fa fa-search" aria-hidden="true"></i></div><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".site-sidebar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="breadcrumb-container"><ul class="breadcrumb"><li class="breadcrumb-link"><a href="index-en.html">Sitecore Cloud Portal</a></li><li class="breadcrumb-link"><a href="portal-administration.html">Portal administration</a></li><li class="breadcrumb-node">Create a support case</li></ul></div></div><main><div id="top-pager"><ul class="pager"><li class="previous"><a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="enabling-and-deleting-sso-connections.html#UUID-2c5b6274-1de8-99ec-26f4-3f54f0b346cc_section-idm1733369876854312">Prev</a></li><li class="next"></li></ul></div><article class="topic content-container" id="content-wrapper"><div id="topic-content" class="topic-content"><section xml:lang="en" lang="en" dir="ltr" class="section" data-origin-id="UUID-b9a4bc0b-1fe2-0ed6-0925-c642cfb11b7f" data-permalink="create-a-support-case.html" data-topic-level="1" data-relative-prefix="" data-time-modified="04/19/2023" data-publication-date="10/26/23" id="UUID-1e6eea88-c2bf-216f-bfa7-fd427e97e996"><div class="titlepage"><div><div class="title"><h1 class="title" style="clear: both">Create a support case</h1></div><div><div class="abstract"><div class="abstract-title">Abstract</div><p>Describes how to create a support case in the Sitecore Cloud Portal.</p></div></div></div></div><p>To receive assistance in resolving technical issues with Sitecore products, documentation, and services, you can create a support case. Before creating a support case, review the <a class="link" href="https://support.sitecore.com/kb?id=kb_article_view&amp;sysparm_article=KB0463549#ScopeOfSupport" target="_blank" rel="noopener">scope of support</a>.</p><div dir="ltr" class="note"><h3 class="title">Note</h3><p>To create a support case, you must have an Organization Admin or Organization Owner role.</p></div><p>To create a support case using the Sitecore Cloud Portal:</p><div class="procedure" id="UUID-1e6eea88-c2bf-216f-bfa7-fd427e97e996_procedure-idm4594952854337633261604918915"><ol class="procedure" type="1"><li class="step"><p>In the Sitecore Cloud Portal, on the menu bar, click <span class="guilabel">Home</span>.</p></li><li class="step"><p>On the homepage, click <span class="guilabel">Create a support case</span>.</p></li><li class="step"><p>In the <span class="guilabel">Create support case</span> dialog box, in the <span class="guilabel">Title</span> field, enter a descriptive title.</p></li><li class="step"><p>In the <span class="guilabel">Description</span> field, enter a detailed explanation of the issue. Use the applicable <a class="link" href="https://support.sitecore.com/kb?id=kb_article_view&amp;sysparm_article=KB0004553" target="_blank" rel="noopener">Support Portal best practices</a>.</p></li><li class="step"><p>In the <span class="guilabel">App</span> drop-down menu, click the affected app.</p></li><li class="step"><p>In the <span class="guilabel">Environment</span> drop-down menu, click the affected environment.</p></li><li class="step"><p>In the <span class="guilabel">Impact</span> drop-down menu, click the appropriate impact of the issue.</p><div class="informaltable table-responsive" id="UUID-1e6eea88-c2bf-216f-bfa7-fd427e97e996_table-idm4594364743318433273297555561"><table style="width:100%;" class="informaltable frame-void rules-rows"><thead><tr><th class="th"><p>Impact</p></th><th class="th"><p>Definition</p></th></tr></thead><tbody><tr><td class="td"><p>Extreme</p></td><td class="td"><p>Meets all of the following criteria:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Impacts the production environment with no workaround available.</p></li><li class="listitem"><p>A continuous or near-continuous site outage, a performance issue that severely inhibits usage of the site, or poor buying experience impacting revenue.</p></li></ul></div></td></tr><tr><td class="td"><p>Major</p></td><td class="td"><p>Meets one of the following criteria with no workaround available:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>In a production environment, severe impact on content authoring, or an intermittent issue impacting visitors' experience.</p></li><li class="listitem"><p>In a production environment, issues highly affecting normal business operations or critical marketing capabilities.</p></li><li class="listitem"><p>In a preproduction environment, an immediate impact on deployment activities affects imminent production project plans.</p></li></ul></div></td></tr><tr><td class="td"><p>Moderate</p></td><td class="td"><p>Meets one of the following criteria:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>In a production environment, does not critically affect business operations.</p></li><li class="listitem"><p>In a production environment, the impact of the problem is alleviated by the availability of a workaround.</p></li><li class="listitem"><p>In a nonproduction environment, causes an impact on development or implementation activity, such as affecting future project plans, or preventing the development or implementation team from working on the project.</p></li></ul></div></td></tr><tr><td class="td"><p>Minimal</p></td><td class="td"><p>Meets one of the following criteria:</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>In a production environment, causes minor or no impact on business operations or visitor experience.</p></li><li class="listitem"><p>In a nonproduction environment, causes a moderate or minor impact on development or implementation activity.</p></li><li class="listitem"><p>Documentation-related queries or requests for product enhancements</p></li><li class="listitem"><p>Issues that do not meet any of the higher severity criteria.</p></li></ul></div></td></tr></tbody></table></div></li><li class="step"><p>Click <span class="guilabel">Submit case</span>.</p><p>After you have created a support case, you receive a support case notification email message.</p></li></ol></div></section><div class="footer-content"><div class="glossary-definitions"></div></div><footer></footer></div></article></main><div id="bottom-pager"><ul class="pager"><li class="previous"><a accesskey="p" class="prev pull-left prev visible-lg visible-md" id="header-navigation-prev" href="enabling-and-deleting-sso-connections.html#UUID-2c5b6274-1de8-99ec-26f4-3f54f0b346cc_section-idm1733369876854312">Prev</a></li><li class="next"></li></ul></div><footer class="site-footer"><div class="inner"><div class="copyright"> © 2023 Sitecore </div><div class="date-modified"><span class="date-modified-text">Last modified: </span><span class="formatted-date">04/19/2023</span></div><div class="publication-date"><span class="publication-date-text">Publication date</span><span class="pubdate-delimiter">: </span><span class="formatted-date">10/26/23</span></div></div></footer></div></div></div></div></body></html>
