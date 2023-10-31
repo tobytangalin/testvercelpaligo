@@ -38,21 +38,11 @@ var toc = [{
 }]
 },
 {
-"url": "portal-administration.html",
+"url": "",
 "text": "Portal administration",
-"class": "topic-link section"
+"class": "topic-link section topichead"
 ,
 "children": [
-{
-"url": "roles.html",
-"text": "Roles",
-"class": "topic-link section"
-},
-{
-"url": "sitecore-cloud-portal-terminology.html",
-"text": "Sitecore Cloud Portal terminology",
-"class": "topic-link section"
-},
 {
 "url": "invite-team-members-to-your-sitecore-cloud-portal-organization.html",
 "text": "Invite team members to your organization",
@@ -70,6 +60,17 @@ var toc = [{
 "class": "topic-link section"
 }]
 },
+{
+"url": "roles.html",
+"text": "Roles",
+"class": "topic-link section"
+},
+{
+"url": "",
+"text": "Authentication",
+"class": "topic-link section topichead"
+,
+"children": [
 {
 "url": "sitecore-authentication.html",
 "text": "Sitecore authentication",
@@ -115,6 +116,12 @@ var toc = [{
 "text": "Enabling and deleting SSO connections",
 "class": "topic-link section"
 }]
+}]
+},
+{
+"url": "sitecore-cloud-portal-terminology.html",
+"text": "Sitecore Cloud Portal terminology",
+"class": "topic-link section"
 },
 {
 "url": "create-a-support-case.html",
