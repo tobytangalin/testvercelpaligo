@@ -25,6 +25,8 @@ $(document).ready(function () {
     /* Adjusting position in view for internal page toc links */
     $(document.body).on('click', '.section-nav-container a', function (e) {
         var clickedhref = $(this).attr('href');
+        var id = this.hash;
+        displayAccordionTarget(id);
         $(clickedhref).scrollView();
         e.preventDefault();
     });

@@ -427,6 +427,10 @@ img{
 	text-decoration: line-through;
 }
 
+/* PAL2-6297 overline */
+.overline {
+	text-decoration: overline;
+}
 
 .emphasis{
     font-style: italic;

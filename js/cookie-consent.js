@@ -99,43 +99,52 @@
      * Function for executing Osana Cookie Consent
      */
     const initCookieConsent = function () {
-        window.cookieconsent.initialise({
-            palette: {
-                popup: {
-                    background: "#000"
-                },
-                button: {
-                    background: "#fdd835"
-                }
-            },
-            type: consenttype,
-            revokable: true,
-            content: {
-                href: privacypolicy
-            },
+        // If cookie consent isn't activated, enable cookies directly
+        const cookieConfig = {
+          palette: {
+              popup: {
+                  background: "#000"
+              },
+              button: {
+                  background: "#fdd835"
+              }
+          },
+          type: consenttype,
+          revokable: true,
+          content: {
+              href: privacypolicy,
+          },
 
-            /**
-             * Handler for status changes.
-             * @param {*} status
-             */
-            onStatusChange: function (status) {
-                // Trigger consented
-                if (status === 'allow') {
-                    if (! window.cookiesConsented) {
-                        window.cookiesConsented = true;
-                        $(document).trigger('cookies.consented');
-                    }
-                // Trigger declined
-                } else if (status === 'deny') {
-                    deleteGACookies();
-                    $(document).trigger('cookies.declined');
-                }
-                // 'dismiss' status is only set when the
-                // consenttype === 'info', and if that's
-                // the case, then we'd already have had
-                // triggered the consent.
-            },
-        });
+          /**
+           * Handler for status changes.
+           * @param {*} status
+           */
+          onStatusChange: function (status) {
+              // Trigger consented
+              if (status === 'allow') {
+                  if (! window.cookiesConsented) {
+                      window.cookiesConsented = true;
+                      $(document).trigger('cookies.consented');
+                  }
+              // Trigger declined
+              } else if (status === 'deny') {
+                  deleteGACookies();
+                  $(document).trigger('cookies.declined');
+              }
+              // 'dismiss' status is only set when the
+              // consenttype === 'info', and if that's
+              // the case, then we'd already have had
+              // triggered the consent.
+          }
+        };
+
+        // allow override of config by declaring the
+        // variable consentOverride i layout-custom-script.js
+        if (typeof consentOverride !== 'undefined') {
+            $.extend(true, cookieConfig, consentOverride);
+        }
+
+        window.cookieconsent.initialise(cookieConfig);
     }
 
     // If cookie consent isn't activated, enable cookies directly

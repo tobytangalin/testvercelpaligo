@@ -120,33 +120,76 @@ function mapVersionPage(){
     });
 }
 
+/**
+ * Matches a path against href regardless if prettyURL is used or not
+ * @param {string} path to match
+ * @param {string} href to match against
+ * @returns {boolean} true or false
+ */
+function matchHref(path, href) {
+    // Certain hosts use "Pretty URLs" which removes the .html extension in the hrefs.
+    // This will add the .html back when looking for a match.
+    if (path === href) {
+        return true;
+    }else if (path.replace(/(.*?)(\.html?|)(#.*)?$/, "$1.html$3") === href.replace(/(.*?)(\.html?|)(#.*)?$/, "$1.html$3")) {
+        return true;
+    }else {
+        return false;
+    }
+}
+
+/**
+ * Evaluates if a Toc line should be active or not
+ * @param {string} path to match
+ * @param {object} thisLink link to evaluate.
+ * @returns {boolean} true or false
+ */
+function evaluateTocLine(path, thisLink) {
+    var pathBase = path.split('#')[0];
+    
+    // jquery object
+    var $thisLink = $(thisLink);
+    
+    var href = decodeURI(thisLink.href);
+    
+    var childNodeLinks = $thisLink.parent().find('ul>li>a');
+    
+    var foundMatch = false;
+    if (childNodeLinks.length > 0) {
+
+        for (var j = 0; j < childNodeLinks.length; j++) {
+            if (evaluateTocLine(path, childNodeLinks[j])) {
+                foundMatch = true;
+            }
+        }
+    }
+    
+    var fragmentNotInToc = (matchHref(pathBase, href) && !foundMatch);
+
+    //Bug in Chrome on Windows makes regex test fail, so checking for equality
+    if (matchHref(path, href) || fragmentNotInToc) {
+        $thisLink.parent().addClass("active");
+        $thisLink.parents("li").addClass("opened");
+        return true;
+    }
+}
 
 function setActiveTocline() {
-    // set the active link in the toc on first load. No hash or querystring included
-    var path = decodeURI(window.location.href.split('#')[0]);
-
+    // set the active link in the toc on first load.
+    var path = decodeURI(window.location.href);
+    //Remove search or language parameters from the url.
     path = path.replace(/\?.*$/, '');
 
     //Clean slate
     $("aside ul.toc a").parent().removeClass("active").removeClass("opened");
 
-    var links = $('aside ul.toc a');
+    var links = $('aside ul.toc>li>a');
 
     for (var i = 0; i < links.length; i++) {
-        var thisLink = links[i];
         // element
-
-        var $thisLink = $(links[i]);
-        // jquery object
-
-        var href = decodeURI(thisLink.href);
-
-        //Bug in Chrome on Windows makes regex test fail, so checking for equality
-        if (href === path) {
-            $thisLink.parent().addClass("active");
-            $thisLink.parents("li").addClass("opened");
-            return false;
-        }
+        var thisLink = links[i];
+        
+        evaluateTocLine(path, thisLink);
     }
 }
 
@@ -166,8 +209,7 @@ function buildSectionToc() {
         var toc = $('aside ul.toc');
 
         var currentChunkListitem = toc.find('li.opened>a').filter(function () {
-            var hrefdecoded = decodeURI(this.href);
-            return hrefdecoded.match(regex);
+            return matchHrefWithRegex(this.href, regex);
         }).parent();
 
         var links = currentChunkListitem.find(">ul");
@@ -222,7 +264,7 @@ function chunkedPrevNext() {
 function getTocLinks() {
     var toc = $('aside ul.toc');
     var links = toc.find('a').filter(function () {
-        return this.href.match(/.*\.html?$/);
+        return matchHrefWithRegex(this.href, /.*\.html?$/);
     });
     var tocLinks = {};
     for (var index = 0; index < links.length; index++) {
@@ -312,4 +354,24 @@ function getEmbedCode(){
                 $pre.append(code.value).addClass(code.language);
             });
     });
+}
+
+/**
+ * Matches a href against a regex
+ * @param {string} href href to match
+ * @param {RegExp} regex The regular expression to match against
+ * @returns {(null|Array)} null or Array with matched urls
+ */
+function matchHrefWithRegex(href, regex) {
+    let hrefdecoded = decodeURI(href);
+    if (! hrefdecoded) {
+        return false;
+    }
+    // Certain hosts use "Pretty URLs" which removes the .html extension in the hrefs.
+    // This will add the .html back when looking for a match if the href isn't a fragment link.
+    const endsWithHTMLorFragment = (hrefdecoded.endsWith('.html') || hrefdecoded.endsWith('.htm') || hrefdecoded.includes('#'));
+    if (!endsWithHTMLorFragment) {
+        hrefdecoded += '.html';
+    }
+    return hrefdecoded.match(regex);
 }
